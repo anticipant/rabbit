@@ -65,6 +65,7 @@ h2 {
 }
 header {
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   left: 0;
@@ -248,7 +249,7 @@ main {
   font-size: 0;
 }
 .team-block_title {
-      margin: 12px 0 38px 5px;
+  margin: 12px 0 38px 5px;
 }
 .team-block_item {
   display: inline-block;
@@ -264,10 +265,21 @@ main {
   margin-right: 115px;
 }
 .team-block_item--rabbit-align p {
-  padding: 5px 15px 5px 40px;
+  padding: 3px 0px 5px 40px;
+}
+.team-block_item--bird-align p {
+  padding: 2px 15px 5px 38px;
+}
+.team-block_item--horse-align {
+  position: relative;
+  left: -5px;
+}
+.team-block_item--bird-align {
+  position: relative;
+  left: 10px;
 }
 .team-block_item:nth-of-type(3n) {
-  margin: 0;
+  margin-right: 0;
 }
 .team-block_item figure {
   margin: 0;
@@ -291,7 +303,7 @@ main {
   color: #fb9c06;
 }
 .team-block_text {
-  padding: 5px 15px 5px 32px;
+  padding: 5px 15px 5px 38px;
   margin: 19px 0;
 
   max-height: 102px;
@@ -322,7 +334,7 @@ main {
   width: 100%;
 }
 .form_title {
-  margin-bottom: 65px;
+  margin: 0 0px 65px 8px;
 
 }
 .form_wrapper {
