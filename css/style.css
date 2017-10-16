@@ -1,14 +1,15 @@
 @font-face {
   font-family: 'st_marie_thinthin';
-  src: url('stmarie-thin-webfont.woff2') format('woff2'),
-    url('stmarie-thin-webfont.woff') format('woff');
+  src: 
+    url('../fonts/stmarie-thin-webfont.woff2') format('woff2'),
+    url('../fonts/stmarie-thin-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
 }
 
 @font-face {
-  font-family: 'bebas';
+  font-family: 'bebas';ы
   src: 
     url(../fonts/bebas___-webfont.woff2) format('woff2'),
     url(../fonts/bebas___-webfont.woff) format('woff');
@@ -58,7 +59,7 @@ h2 {
   font-size: 40px;
   font-weight: 400;
   color: #ff9c00;
-  font-family: 'st_marie_thinthin';
+  font-family: st_marie_thinthin, serif;
   text-align: center;
   text-decoration: underline;
 }
@@ -98,6 +99,7 @@ header {
 }
 .main-menu_item {
   display: inline-block;
+  vertical-align: top;
   font-family: Calibri, sans-serif;
 
   list-style: none;
@@ -155,6 +157,7 @@ main {
 }
 .question_text {
   display: inline-block;
+  vertical-align: top;
   margin: 132px 0 0 20px;
   padding: 8px 30px;
   font-family: bebas, sans-serif;
@@ -179,12 +182,121 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;    
-  padding: 18px 20px 18px 120px;
+  padding: 13px 20px 19px 120px;
   font-size: 33px;
   color: #fff;
-  font-family: 'st_marie_thinthin';
+  font-family: st_marie_thinthin, serif;
   text-transform: uppercase;
 }
+/*INFO BLOCK*/
+.info-block {
+  width: 100%;
+}
+.info-block_wrapper {
+  width: 1200px;
+  margin: 10px auto 20px;
+  font-size: 0;
+}
+.info-block_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  min-height: 190px;
+  padding: 8px 7px 5px 20px;
+}
+.info-block_item p {
+  margin: 10px 0 2px;
+  font-size: 15px;
+  font-family: calibri, sans-serif;
+  line-height: 23px;
+  color: #000;
+}
+.info-block_item a {
+  float: right;
+  margin-right: 15px;
+  color: #ffac00;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 17px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.info-block_item a:hover {
+  color: #a36b02;
+  transform: scale(1.1);
+}
+/*team block*/
+.team-block {
+  width: 100%;
+}
+.team-block_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.team-block_title {
+  margin: 33px 0 38px 5px;
+}
+.team-block_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 312px;
+  margin-right: 147px;
+  font-size: 15px;
+  line-height: 23px;
+  font-family: calibri, sans-serif;
+  font-weight: 300;
+}
+.team-block_item--align {
+  margin-right: 115px;
+}
+.team-block_item--align p {
+  padding: 5px 15px 5px 40px;
+}
+.team-block_item:last-of-type {
+  margin: 0;
+}
+.team-block_item figure {
+  margin: 0;
+}
+.team-block_img-container {
+  width: 312px;
+  height: 312px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 10px solid #ffb540;
+}
+.team-block_item figcaption {
+  margin: 0 0 29px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 23px;
+  font-family: calibri, sans-serif;
+  font-weight: 300;
+}
+.team-block_item span {
+  color: #fb9c06;
+}
+.team-block_text {
+  padding: 5px 15px 5px 32px;
+  margin: 19px 0;
+}
+.team-block_item img {
+  height: 312px;
+  width: auto;
+  margin: 0 0 0 -49px;
+}
+.team-block_item:first-of-type img {
+  height: auto;
+  width: 312px;
+  margin: -21px 0 0 0px;
+}
+.team-block_item:last-of-type img {
+  height: auto;
+  width: 312px;
+  margin: 0;
+}
+
 /*FORM BLOCK*/
 
 .form {
@@ -192,15 +304,19 @@ main {
 }
 .form_title {
   margin-bottom: 65px;
+
 }
 .form_wrapper {
   width: 1200px;
-  margin: 40px auto 50px;
+  margin: 12px auto 53px;
 }
 .form_item {
   width: 100%;
   margin-bottom: 37px;
   font-size: 0;
+}
+.mail-module {
+  margin-bottom: 35px;
 }
 .textarea-module {
   margin-bottom: 23px;
@@ -209,7 +325,7 @@ main {
   display: inline-block;
   vertical-align: top;
   width: 132px;
-  font-family: 'st_marie_thinthin';
+  font-family: st_marie_thinthin, serif;
   font-size: 24px;
   color: #fb9c06;
 }
@@ -219,7 +335,6 @@ main {
   display: inline-block;
   vertical-align: top;
   padding: 4px 10px 5px;
-  margin-right: 31px;
   width: 1068px;
   font-size: 20px;
   color: #fb9c06;
@@ -231,7 +346,9 @@ main {
 }
 .form_btn {
   min-width: 176px;
-  padding: 5px 19px 5px 10px;
+  padding: 1px 19px 5px 10px;
+  margin-right: 31px;
+  font-family: st_marie_thinthin, serif;
   font-size: 30px;
   color: #fff;
   background: #fb9c06;
