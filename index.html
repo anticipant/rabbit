@@ -34,6 +34,29 @@
           <div class="question_text question_text--invert">Do you like oranges?</div>
         </div>
       </div>
+      <div class="form">
+        <div class="form_wrapper">
+          <h2 class="form_title">Send us a message...</h2>
+          <form action="/" method="post" class="clearfix">
+
+            <div class="text-module form_item">
+              <label class="text-module_label" for="input-name">Имя:</label>
+              <input class="text-module_input" type="text" name="name" id="input-name" required>
+            </div>
+
+            <div class="mail-module form_item">
+              <label class="mail-module_label" for="input-email">Email:</label>
+              <input class="mail-module_input" type="email" name="email" id="input-email">
+
+            </div>
+            <div class="textarea-module form_item">
+              <label class="textarea-module_label" for="input-email">Message:</label>
+              <textarea class="textarea-module_field" name="comments" id="comments" rows="5"></textarea>
+            </div>
+            <input class="form_btn" type="submit" value="Submit" name="send">
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
       <div>

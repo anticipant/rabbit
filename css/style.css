@@ -52,6 +52,16 @@ body {
   outline: 1px dashed dodgerblue;
   width: 1600px;
 }
+h2 {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ff9c00;
+  font-family: 'st_marie_thinthin';
+  text-align: center;
+  text-decoration: underline;
+}
 header {
   outline: 1px dashed dodgerblue;
   width: 100%;
@@ -174,4 +184,68 @@ main {
   color: #fff;
   font-family: 'st_marie_thinthin';
   text-transform: uppercase;
+}
+/*FORM BLOCK*/
+
+.form {
+  width: 100%;
+}
+.form_title {
+  margin-bottom: 65px;
+}
+.form_wrapper {
+  width: 1200px;
+  margin: 40px auto 50px;
+}
+.form_item {
+  width: 100%;
+  margin-bottom: 37px;
+  font-size: 0;
+}
+.textarea-module {
+  margin-bottom: 23px;
+}
+.form_item label {
+  display: inline-block;
+  vertical-align: top;
+  width: 132px;
+  font-family: 'st_marie_thinthin';
+  font-size: 24px;
+  color: #fb9c06;
+}
+.form_item input,
+.form_item textarea {
+
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px 10px 5px;
+  margin-right: 31px;
+  width: 1068px;
+  font-size: 20px;
+  color: #fb9c06;
+  background: #f8f7f6;
+  border: 1px solid #dedddc;
+  border-bottom: none;
+  border-right: none;
+  box-shadow: inset 4px 1px 1px 0px #d2d0cf;
+}
+.form_btn {
+  min-width: 176px;
+  padding: 5px 19px 5px 10px;
+  font-size: 30px;
+  color: #fff;
+  background: #fb9c06;
+  float: right;
+  border: 1px solid #f6bb5c;
+  box-shadow: 0 3px 0 0 #cc830f;
+}
+textarea {
+  height: 90px;
+  resize: none;
+}
+.mail-module_label {
+  margin: 5px 0 0;
+}
+.textarea-module_label {
+  margin: 5px 0 0;
 }
